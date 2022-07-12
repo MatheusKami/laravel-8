@@ -1,0 +1,77 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.header{
+    background-color: black;
+}
+.titulo{
+    color: lawngreen;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.header .opcoes{
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid lawngreen;
+
+}
+.opcoes ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.opcoes ul li a{
+    background-color: rgb(0, 0, 0);
+	color: white;/*muda a cor*/
+	display: inline-block;
+	font-weight: bold; /*Coloca o texto em negrito*/
+	font-size: clamp(1em, 1vw + 1em, 1.5em);/*muda o tamanho da fonte, clamp... faz com que se adapte*/
+	padding: 15px 10px;/*muda o tamanho do padding*/
+	text-decoration: none; /*Remover o sublinhado do link*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.opcoes ul li a:hover{
+	background-color: #FFF;/*cor de fundo*/
+	color: lawngreen;
+	transition: .5s;/*delay na transicao de uma cor a outra*/
+}
+.content{
+    text-align: center;
+}
+.content p{
+    margin: 20px;
+}
+.content a{
+    background-color: black;
+    color: lawngreen;/*muda a cor*/
+    border: #FFF solid 2px;
+	display: inline-block;
+	font-weight: bold; /*Coloca o texto em negrito*/
+	font-size: clamp(1em, 1vw + 1em, 1.5em);/*muda o tamanho da fonte, clamp... faz com que se adapte*/
+	padding: 5px 10px;/*muda o tamanho do padding*/
+	text-decoration: none; /*Remover o sublinhado do link*/
+}
+.titulo_conteudo{
+    color: black;
+    text-align: center;
+}
+.formulario{
+    text-align: center;
+}
+.formulario input{
+    margin-bottom: 10px;
+}
+
+.legenda{
+    font-size: smaller;
+}
